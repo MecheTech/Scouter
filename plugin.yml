@@ -1,6 +1,6 @@
 main: com.mechetech.scouter.Scouter
 name: Scouter
-version: 1.0
+version: '1.0'
 author: Zachary Jones
 description: An RP style player tracker. 
    Players can get a report of the number of players in a given direction from them. 
@@ -9,3 +9,17 @@ description: An RP style player tracker.
    Cardinal direction, but is consumed on use.
    The Major Scouting Device reveals the number of players within a 2048 block radius 
    and can be used multiple times.
+commands:
+   grantscouter:
+      description: Enables the user to give a player a scouter or greater scouter 
+         the greater scouter can show all the players in the cardinal directions 
+         from the item user within a 2000 block range
+         The normal scouter can show the number of players in the cardinal directions
+         with a 250 block range
+      usage: "Usage: /grantscouter <player> [major|scouter]"
+      permission: scouter.grantscouter
+      permission-message: You do not have permission to use this command.
+permissions:
+   scouter.grantscouter:
+      description: Allows grantscouter
+      default: op
