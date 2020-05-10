@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-8.0.242.08-hotspot"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="C:/Users/Zachary Jones/Documents/Code/Spigot/Spigot/Spigot-API/target/spigot-api-1.15.2-R0.1-SNAPSHOT-shaded.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://hub.spigotmc.org/javadocs/spigot/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Zachary Jones/Documents/Code/Scouter/lib/LuckPerms-Bukkit-5.0.162.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://javadoc.io/doc/net.luckperms/api/latest/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

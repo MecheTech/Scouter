@@ -1,0 +1,11 @@
+main: com.mechetech.scouter.Scouter
+name: Scouter
+version: 1.0
+author: Zachary Jones
+description: An RP style player tracker. 
+   Players can get a report of the number of players in a given direction from them. 
+   The plugin adds 2 items that provide this ability to differeing degrees. 
+   The Scouting Device reveals the number of players within a 256 block radius segmented by 
+   Cardinal direction, but is consumed on use.
+   The Major Scouting Device reveals the number of players within a 2048 block radius 
+   and can be used multiple times.
