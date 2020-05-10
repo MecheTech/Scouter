@@ -6,6 +6,7 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.mechetech.scouter.commands.GrantScouter;
+import com.mechetech.scouter.events.ScouterUse;
 
 /**
  * 
@@ -21,6 +22,7 @@ public class Scouter extends JavaPlugin {
 		Logger logger = getLogger();
 		
 		getCommand("grantscouter").setExecutor(new GrantScouter());
+		getServer().getPluginManager().registerEvents(new ScouterUse(), this);
 		
 		logger.info(pdfFile.getName() + " has been enabled (V." + 
 				pdfFile.getVersion() + ")");
