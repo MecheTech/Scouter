@@ -9,6 +9,11 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import net.md_5.bungee.api.ChatColor;
 
+/**
+ * Makes the scouter ItemStacks with unique data
+ * @author Zachary Jones
+ *
+ */
 public class Scouters {
 
 	private static Material scouterMaterial = Material.STICK;
@@ -22,7 +27,11 @@ public class Scouters {
 		lore.add("This is a scouter!");
 		lore.add("Right click to discover mormoons within 250 blocks.");
 		lore.add("One use. No refunds!");
+		meta.setLore(lore);
 		
+		meta.setUnbreakable(false);
+		
+		scouter.setItemMeta(meta);
 		return scouter;
 	}
 	
@@ -35,7 +44,11 @@ public class Scouters {
 		lore.add("This is a Major Scouter!");
 		lore.add("Right click to discover mormoons within 2000 blocks.");
 		lore.add("Many refunds!");
+		meta.setLore(lore);
 		
+		meta.setUnbreakable(true);
+		
+		scouter.setItemMeta(meta);
 		return scouter;
 	}
 }
