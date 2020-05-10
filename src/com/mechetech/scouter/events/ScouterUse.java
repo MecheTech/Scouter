@@ -14,6 +14,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import net.md_5.bungee.api.ChatColor;
+
 /**
  * Listens for the use of the scouter
  * @author Zachary Jones
@@ -62,7 +64,21 @@ public class ScouterUse implements Listener {
 			user.sendMessage("You detect " + north.size() + " North from here, " +
 					east.size() + " East of here, " + south.size() + " South of here, " +
 					west.size() + " West of here.");
-			
+			String watched = ChatColor.DARK_RED + "You feel as though you are being watched.";
+			String yappp = ChatColor.DARK_RED + "You feel as though " + ChatColor.GREEN +
+					"YAPPP" + ChatColor.DARK_RED + " you are being watched.";
+			for (Player player : north) {
+				player.sendMessage(watched);
+			}
+			for (Player player : east) {
+				player.sendMessage(watched);
+			}
+			for (Player player : south) {
+				player.sendMessage(watched);
+			}
+			for (Player player : west) {
+				player.sendMessage(yappp);
+			}
 			
 			ItemMeta meta = event.getItem().getItemMeta();
 			if (!meta.isUnbreakable()) {
